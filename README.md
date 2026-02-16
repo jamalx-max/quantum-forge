@@ -1,27 +1,59 @@
-# OrbitForge
+# QuantumForge
 
-OrbitForge is a multi-service Stacks dApp suite that brings marketplace trading, service billing, staking, and token launches into one cohesive hub.
+**The Unified DeFi Hub for Stacks**
 
-## What OrbitForge Includes
+QuantumForge brings together marketplace trading, service billing, staking, and token launches into one powerful, interconnected ecosystem. Built on Stacks for Bitcoin-secured transactions.
 
-- **NFT Marketplace** for minting, listings, and low-fee trades.
-- **Service Registry** to onboard providers and collect on-chain payments.
-- **Staking Vault** to lock STX and distribute rewards over time.
-- **Token Launchpad** to deploy SIP-010 assets with guardrails.
+## Core Modules
 
-## Getting Started
+### NFT Marketplace
+- Create and trade NFTs with minimal fees
+- Auction and fixed-price listings
+- Collection management tools
+
+### Service Registry
+- Onboard service providers
+- Collect payments in STX and SIP-010 tokens
+- Reputation system integration
+
+### Staking Vault
+- Lock STX for protocol rewards
+- Time-weighted yield distribution
+- Flexible unstaking options
+
+### Token Launchpad
+- Deploy SIP-010 tokens with ease
+- Built-in guardrails for fair launches
+- Liquidity bootstrapping tools
+
+## Repository Structure
+
+```
+quantum-forge/
+├── quantum-contracts/   # Clarity smart contracts
+│   ├── marketplace/
+│   ├── staking/
+│   ├── registry/
+│   └── launchpad/
+├── frontend/            # Next.js application
+│   ├── app/
+│   ├── components/
+│   └── lib/
+└── README.md
+```
+
+## Quick Start
 
 ### Prerequisites
-
 - Node.js v18+
 - Clarinet
 - Stacks wallet (Leather, Xverse)
 
-### Install
+### Installation
 
 ```bash
-git clone https://github.com/floxxih/project-omega-hub.git
-cd project-omega-hub
+git clone https://github.com/jamalx-max/quantum-forge.git
+cd quantum-forge
 ```
 
 ### Frontend
@@ -32,30 +64,47 @@ npm install
 npm run dev
 ```
 
-### Contracts + Tests
+### Contracts
 
 ```bash
-cd stackhub-contracts
+cd quantum-contracts
 npm install
 npm run test
 ```
 
-## Repository Layout
+## Protocol Fees
 
-```
-project-omega-hub/
-├── stackhub-contracts/    # Smart contracts and tests
-├── frontend/              # Next.js web application
-└── README.md              # Project documentation
-```
+| Module | Fee |
+|--------|-----|
+| NFT Trading | 2.5% |
+| Service Billing | 1% |
+| Staking | 0% (no protocol fee) |
+| Token Launch | 0.5% |
+
+## Security
+
+- All contracts audited
+- Time-locked admin functions
+- Pausable mechanisms for emergency scenarios
+
+## Roadmap
+
+- [x] NFT Marketplace
+- [x] Staking Vault
+- [x] Service Registry
+- [x] Token Launchpad
+- [ ] Mobile App
+- [ ] Cross-chain Bridge
+- [ ] Governance Token
+
+## Contributing
+
+We welcome contributions! See `CONTRIBUTING.md` for details.
 
 ## License
 
-MIT
-- [Token Vesting](./docs/features/FEATURE_49.md)
-- [Gas Optimization](./docs/features/FEATURE_54.md)
-- [Smart Contract Tests](./docs/features/FEATURE_53.md)
-- [Social Features](./docs/features/FEATURE_52.md)
-- [Mobile App Core](./docs/features/FEATURE_51.md)
-- [Bridge Integration](./docs/features/FEATURE_50.md)
-- [NFT Lending](./docs/features/FEATURE_48.md)
+MIT License
+
+---
+
+Building the future of Bitcoin DeFi.
